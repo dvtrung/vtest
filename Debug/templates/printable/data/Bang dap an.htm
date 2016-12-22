@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<script type="text/javascript" src="data.js"></script>
+
+    <style type="text/css">
+        .style1 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p class="style1">
+        <strong>ĐÁP ÁN</strong></p>
+
+<script lang="javascript">
+
+    document.writeln('<table border="1" width="100%">');
+
+    qAns = new Array();
+    qCount = 0;
+    for (i = 0; i < textArr.length; i++) if (itType[i] == typeABCD) { 
+        ans = answers[i];
+        qAns[qCount] = (ans == 0 ? 'A' : (ans == 1 ? 'B' : (ans == 2 ? 'C' : 'D')));
+        qCount++;
+    }
+
+    for (i = 0; i < qAns.length / 10 + 1; i++) {
+        document.write('<tr>');
+        for (j = 0; j < 10; j++) {
+            id = i * 10 + j;
+            if (id < qAns.length) {
+                document.write('<td>');
+                document.writeln(id+1 + '. ' + qAns[id]);
+                document.write('</td>');
+            }
+        }
+        document.write('</tr>')
+    }
+    document.writeln('</table>');
+
+</script>
+
+</body>

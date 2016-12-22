@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="VTest.reg" />
+    <None Include="res\info.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\buttons.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\writelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\writesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ribbon.mfcribbon-ms">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\VTest.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\VTestDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\VTest.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\112_Tick_Green.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\delete.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\edit_lar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\Icon\VS2010ImageLibrary\VS2010ImageLibrary\Objects\ico_format\WinVista\Stopwatch.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\globe1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\home_lar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\home_large.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\home_small.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\edit_sma.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00007.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\1338011780_stock_task.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\mfcribbon-ms00001.mfcribbon-ms">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lib\appfunc.h" />
+    <ClInclude Include="VTestView.h" />
+    <ClInclude Include="DlgNewWizard.h" />
+    <ClInclude Include="DlgPageSetup.h" />
+    <ClInclude Include="DlgProperties.h" />
+    <ClInclude Include="HtmlEditCtrlEx.h" />
+    <ClInclude Include="IntArray.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\lib\TestInfo.h" />
+    <ClInclude Include="VTest.h" />
+    <ClInclude Include="VTestDoc.h" />
+    <ClInclude Include="DlgExportHTML.h" />
+    <ClInclude Include="..\lib\TestHistory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\appfunc.cpp" />
+    <ClCompile Include="VTestView.cpp" />
+    <ClCompile Include="DlgNewWizard.cpp" />
+    <ClCompile Include="DlgPageSetup.cpp" />
+    <ClCompile Include="DlgProperties.cpp" />
+    <ClCompile Include="HtmlEditCtrlEx.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\lib\TestInfo.cpp" />
+    <ClCompile Include="VTest.cpp" />
+    <ClCompile Include="VTestDoc.cpp" />
+    <ClCompile Include="DlgExportHTML.cpp" />
+    <ClCompile Include="..\lib\TestHistory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VTest.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Debug\MathRender.lib" />
+    <Library Include="..\Debug\ItemBase.lib" />
+  </ItemGroup>
+</Project>

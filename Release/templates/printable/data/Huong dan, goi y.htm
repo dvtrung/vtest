@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<script type="text/javascript" src="data.js"></script>
+
+
+<script language="javascript">
+
+    function renderQuiz() {
+        document.body.innerText = "";
+        qCount = 0;
+        for (i = 0; i < textArr.length; i++) {
+            if (itType[i] == undefined) continue;
+            else if (itType[i] == typeABCD || itType[i] == typeQuest) {
+                qCount++;
+                if (hint[i] != "") document.writeln('<p class="question"> ' + '<b>Câu ' + qCount + ' : </b>' + hint[i] + ' </p>');
+            }
+        }
+        //document.writeln('<p><input type="submit" value="Hoàn thành" onclick="onDone()" /> ');
+        //document.writeln('<input type="submit" value="Reset Quiz" onclick="resetQuiz(true)" /></p><p style="display:none"><img src="correct.gif" style="border:0" alt="Correct!" /><img src="incorrect.gif" style="border:0" alt="Incorrect!" /></p>');
+    }
+</script>
+
+</head>
+
+<body>
+
+<script lang="javascript">
+    renderQuiz();
+</script>
+
+</body>

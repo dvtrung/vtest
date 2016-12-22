@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46FFA93C-6197-41D3-B5EC-1D7363BC2195}</ProjectGuid>
+    <RootNamespace>VTestStd</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Icon\VS2010ImageLibrary\VS2010ImageLibrary\Actions\ico_format\WinVista\042b_AddCategory.ico" />
+    <None Include="..\..\..\..\Icon\VS2010ImageLibrary\VS2010ImageLibrary\Actions\ico_format\WinVista\077_AddFile.ico" />
+    <None Include="..\..\..\..\Icon\VS2010ImageLibrary\VS2010ImageLibrary\Actions\ico_format\WinVista\delete.ico" />
+    <None Include="..\..\..\..\Icon\VS2010ImageLibrary\VS2010ImageLibrary\Objects\ico_format\Office and VS\Folder.ico" />
+    <None Include="..\..\..\..\Icon\VS2010ImageLibrary\VS2010ImageLibrary\Objects\ico_format\Office and VS\UtilityText.ico" />
+    <None Include="..\..\..\..\Icon\VS2010ImageLibrary\VS2010ImageLibrary\Objects\ico_format\WinVista\Stopwatch.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\112_Tick_Green.ico" />
+    <None Include="res\126_Edit.ico" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\delete.ico" />
+    <None Include="res\folder.ico" />
+    <None Include="res\Globe.ico" />
+    <None Include="res\globe1.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon3.ico" />
+    <None Include="res\tick.ico" />
+    <None Include="res\user.ico" />
+    <None Include="res\VTestStd.ico" />
+    <None Include="res\VTestStd.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lib\appfunc.h" />
+    <ClInclude Include="..\lib\Item.h" />
+    <ClInclude Include="..\lib\ItemArray.h" />
+    <ClInclude Include="..\lib\MathDraw.h" />
+    <ClInclude Include="..\lib\TestInfo.h" />
+    <ClInclude Include="AccArray.h" />
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="DlgConfirmTest.h" />
+    <ClInclude Include="DlgLogin.h" />
+    <ClInclude Include="DlgNewAccount.h" />
+    <ClInclude Include="DlgNewCourse.h" />
+    <ClInclude Include="DlgSelectCourse.h" />
+    <ClInclude Include="DlgSelectTest.h" />
+    <ClInclude Include="DlgTest.h" />
+    <ClInclude Include="DlgTestResult.h" />
+    <ClInclude Include="DlgUser.h" />
+    <ClInclude Include="DlgWait.h" />
+    <ClInclude Include="QuestList.h" />
+    <ClInclude Include="QuestTabCtrl.h" />
+    <ClInclude Include="QuestView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabCtrlEx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestArray.h" />
+    <ClInclude Include="VTestStd.h" />
+    <ClInclude Include="VTestStdDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\appfunc.cpp" />
+    <ClCompile Include="..\lib\Item.cpp" />
+    <ClCompile Include="..\lib\ItemArray.cpp" />
+    <ClCompile Include="..\lib\MathDraw.cpp" />
+    <ClCompile Include="..\lib\TestInfo.cpp" />
+    <ClCompile Include="AccArray.cpp" />
+    <ClCompile Include="Account.cpp" />
+    <ClCompile Include="DlgConfirmTest.cpp" />
+    <ClCompile Include="DlgLogin.cpp" />
+    <ClCompile Include="DlgNewAccount.cpp" />
+    <ClCompile Include="DlgNewCourse.cpp" />
+    <ClCompile Include="DlgSelectCourse.cpp" />
+    <ClCompile Include="DlgSelectTest.cpp" />
+    <ClCompile Include="DlgTest.cpp" />
+    <ClCompile Include="DlgTestResult.cpp" />
+    <ClCompile Include="DlgUser.cpp" />
+    <ClCompile Include="DlgWait.cpp" />
+    <ClCompile Include="QuestList.cpp" />
+    <ClCompile Include="QuestTabCtrl.cpp" />
+    <ClCompile Include="QuestView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabCtrlEx.cpp" />
+    <ClCompile Include="TestArray.cpp" />
+    <ClCompile Include="VTestStd.cpp" />
+    <ClCompile Include="VTestStdDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VTestStd.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="VTestStd.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

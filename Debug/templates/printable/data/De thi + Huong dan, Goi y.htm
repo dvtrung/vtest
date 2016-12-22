@@ -1,0 +1,75 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<script type="text/javascript" src="data.js"></script>
+
+
+<script language="javascript">
+
+    function printAns(i, j) {
+        document.writeln(
+            (j == 0 ? 'A' : (j == 1 ? 'B' : (j == 2 ? 'C' : 'D'))) + '. ' + choices[i][j] + '<br />');
+    }
+
+    function renderQuiz() {
+        document.body.innerText = "";
+        qCount = 0;
+        for (i = 0; i < textArr.length; i++) {
+            if (itType[i] == undefined) continue;
+            else if (itType[i] == 1 || itType[i]==3) {
+                document.writeln('<p class="question"> ' + textArr[i] + ' </p>');
+            }
+            else if (itType[i]==2) {
+                qCount++;
+                document.writeln('<p class="question"> ' + '<b>Câu ' + qCount + ' : </b>' + textArr[i] + ' </p>');
+                if (choices[i][0].length < 20 &&
+					choices[i][1].length < 20 &&
+					choices[i][2].length < 20 &&
+					choices[i][3].length < 20) {
+                    document.writeln('<table border="0" width="100%">');
+                    document.writeln('<tr>');
+                    j = 0; document.write('<td>'); printAns(i, j); document.writeln('</td>');
+                    j = 1; document.write('<td>'); printAns(i, j); document.writeln('</td>');
+                    j = 2; document.write('<td>'); printAns(i, j); document.writeln('</td>');
+                    j = 3; document.write('<td>'); printAns(i, j); document.writeln('</td>');
+                    document.writeln('</tr>');
+                    document.writeln('</table>');
+                }
+                else if (choices[i][0].length < 70 &&
+					choices[i][1].length < 70 &&
+					choices[i][2].length < 70 &&
+					choices[i][3].length < 70) {
+                    document.writeln('<table border="0" width="100%">');
+                    document.writeln('<tr>');
+                    j = 0; document.write('<td>'); printAns(i, j); document.writeln('</td>');
+                    j = 1; document.write('<td>'); printAns(i, j); document.writeln('</td>');
+                    document.writeln('</tr>');
+
+                    document.writeln('<tr>');
+                    j = 2; document.write('<td>'); printAns(i, j); document.writeln('</td>');
+                    j = 3; document.write('<td>'); printAns(i, j); document.writeln('</td>');
+                    document.writeln('</tr>');
+                    document.writeln('</table>');
+                }
+                else {
+                    for (j = 0; j < choices[i].length; j++) {
+                        printAns(i, j);
+                    }
+                }
+            }
+            if ((hint[i] != undefined) && (hint[i] != "")) document.writeln('<br><u>Hướng dẫn</u> : ' + hint[i]);
+        }
+        //document.writeln('<p><input type="submit" value="Hoàn thành" onclick="onDone()" /> ');
+        //document.writeln('<input type="submit" value="Reset Quiz" onclick="resetQuiz(true)" /></p><p style="display:none"><img src="correct.gif" style="border:0" alt="Correct!" /><img src="incorrect.gif" style="border:0" alt="Incorrect!" /></p>');
+    }
+</script>
+
+</head>
+
+<body>
+
+<script lang="javascript">
+    renderQuiz();
+</script>
+
+</body>

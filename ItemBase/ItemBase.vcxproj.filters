@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\ItemBase.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ItemBase.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\appfunc.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemArray.cpp" />
+    <ClCompile Include="ItemBase.cpp" />
+    <ClCompile Include="QuestItemABCD.cpp" />
+    <ClCompile Include="QuestItemTrueFalse.cpp" />
+    <ClCompile Include="TextItem.cpp" />
+    <ClCompile Include="ContainerItem.cpp" />
+    <ClCompile Include="QuestItem.cpp" />
+    <ClCompile Include="DlgAddCont.cpp" />
+    <ClCompile Include="DlgAddQuest.cpp" />
+    <ClCompile Include="DlgAddQuestion.cpp" />
+    <ClCompile Include="DlgAddQuestTrueFalse.cpp" />
+    <ClCompile Include="DlgAddText.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lib\appfunc.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemArray.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="DlgAddCont.h" />
+    <ClInclude Include="DlgAddQuest.h" />
+    <ClInclude Include="DlgAddQuestion.h" />
+    <ClInclude Include="DlgAddQuestTrueFalse.h" />
+    <ClInclude Include="DlgAddText.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ItemBase.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Debug\MathRender.lib" />
+    <Library Include="..\Debug\EditCtrl.lib" />
+  </ItemGroup>
+</Project>

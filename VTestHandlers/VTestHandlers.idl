@@ -1,0 +1,52 @@
+// VTestHandlers.idl : IDL source for VTestHandlers
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (VTestHandlers.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(F455D785-654B-4502-8456-192FCDB1B276),
+	pointer_default(unique)
+]
+interface IPreview : IUnknown
+{
+};
+
+[
+	object,
+	uuid(94D22978-E165-4C0D-9487-837B1FCB7E66),
+	pointer_default(unique)
+]
+interface IThumbnail : IUnknown
+{
+};
+
+[
+	uuid(CD786645-023D-4E59-9C03-3A26454A9ED3),
+	version(1.0),
+]
+library VTestHandlersLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(73B00FF3-0EB4-4832-9A54-95782566192B)
+	]
+	coclass Preview
+	{
+		[default] interface IPreviewHandler;
+	};
+	[
+		uuid(11F7EE73-0322-4457-90EC-E84567A1F9BB)
+	]
+	coclass Thumbnail
+	{
+		[default] interface IThumbnailProvider;
+	};
+};
+
+import "shobjidl.idl";
+import "thumbcache.idl";

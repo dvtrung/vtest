@@ -1,0 +1,23 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {11F7EE73-0322-4457-90EC-E84567A1F9BB} = s 'Thumbnail Handler Class'
+		{
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{CD786645-023D-4E59-9C03-3A26454A9ED3}'
+			Version = s '1.0'
+		}
+	}
+
+	NoRemove .vtest
+	{
+		NoRemove ShellEx
+		{
+			ForceRemove {E357FCCD-A995-4576-B01F-234630154E96} = s '{11F7EE73-0322-4457-90EC-E84567A1F9BB}'
+		}
+	}
+}
