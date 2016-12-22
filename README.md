@@ -4,6 +4,8 @@ A software started in 2012, using VC++ 2010 and MFC foundation.
 
 THIS PROJECT WAS TERMINATED.
 
+[Download Setup File](https://github.com/dvtrung/vtest/releases/download/1.0/setup.rar)
+
 # Brief Introduction
 
 There are 3 applications
